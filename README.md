@@ -18,6 +18,22 @@
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/search-filter.png" width="100%" alt="One-click Pre-2023 Search Filter on Google" />
+  <br/>
+  <em>1. One-click floating <code>Pre-2023</code> filter pill on Google, DuckDuckGo, and Bing.</em>
+</p>
+
+<p align="center">
+  <img src="screenshots/date-inspector.png" width="100%" alt="True Publication Date Inspector catching a 2016 article updated in 2026" />
+  <br/>
+  <em>2. Inspects the page's true publication date (catching a 2016 tutorial marked as updated in 2026) with on-demand Wayback Machine &amp; snapshot diff.</em>
+</p>
+
+---
+
 ## Why TrueDate?
 
 Modern search results are flooded with two things:
@@ -51,15 +67,15 @@ When you open an article, TrueDate inspects the page locally and displays a non-
 
 ## Installation
 
-> **Note:** Version `0.1.0` has been submitted to **Mozilla Firefox Add-ons (AMO)** and is currently in the review queue. Once approved, the direct one-click store link will be posted here. In the meantime, you can install from the [latest release (`true-date-extension.zip`)](https://github.com/zdying/true-date-extension/releases) in 30 seconds:
+> **Note:** Version `0.1.0` has been submitted to **Mozilla Firefox Add-ons (AMO)** and is currently in the review queue. Once approved, the direct one-click store link will be posted here. In the meantime, you can download [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) directly and install in 30 seconds:
 
 ### Firefox (Developer / Nightly / Temporary Load)
-1. Download [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/releases) from the Releases page (or clone this repo).
+1. Download [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) (or clone this repo).
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
 3. Click **Load Temporary Add-on...** and select `manifest.json` (or `true-date-extension.zip`).
 
 ### Chrome / Edge / Brave / Vivaldi
-1. Download and unzip [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/releases) (or clone this repo).
+1. Download and unzip [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) (or clone this repo).
 2. Open `chrome://extensions` and enable **Developer mode** (top-right toggle).
 3. Click **Load unpacked** and select the `true-date-extension` folder.
 
