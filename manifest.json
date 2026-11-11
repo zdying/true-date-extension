@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "TrueDate & Pre-AI Search",
+  "version": "0.1.0",
+  "description": "One-click Pre-2023 search filter and local-first inspector that reveals true article publication dates.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "TrueDate & Pre-AI Search",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://web.archive.org/*"],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["lib/*.js", "content/*.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "truedate-pre-ai@example.local",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

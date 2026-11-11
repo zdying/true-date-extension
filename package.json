@@ -1,0 +1,9 @@
+{
+  "name": "true-date-extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/dates.test.js",
+    "pack": "rm -f true-date-extension.zip && zip -r true-date-extension.zip manifest.json background.js lib content icons"
+  }
+}
