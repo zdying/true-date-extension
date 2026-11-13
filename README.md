@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/zdying/true-date-extension/releases"><img src="https://img.shields.io/badge/release-v0.1.0-10b981?style=flat-square" alt="Release v0.1.0" /></a>
-  <img src="https://img.shields.io/badge/Firefox_Add--ons-In_Review_Queue-f59e0b?style=flat-square&logo=firefox-browser&logoColor=white" alt="Firefox Add-ons: In Review Queue" />
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/truedate-pre-ai-search/"><img src="https://img.shields.io/badge/Firefox_Add--ons-Available-ff7139?style=flat-square&logo=firefox-browser&logoColor=white" alt="Get the Firefox Add-on" /></a>
   <img src="https://img.shields.io/badge/Manifest-V3-3b82f6?style=flat-square" alt="Manifest V3" />
   <img src="https://img.shields.io/badge/telemetry-zero-10b981?style=flat-square" alt="Zero Telemetry" />
 </p>
@@ -67,12 +67,10 @@ When you open an article, TrueDate inspects the page locally and displays a non-
 
 ## Installation
 
-> **Note:** Version `0.1.0` has been submitted to **Mozilla Firefox Add-ons (AMO)** and is currently in the review queue. Once approved, the direct one-click store link will be posted here. In the meantime, you can download [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) directly and install in 30 seconds:
+### Firefox (Official Add-on Store)
+👉 **[Install from Mozilla Firefox Add-ons (AMO)](https://addons.mozilla.org/en-US/firefox/addon/truedate-pre-ai-search/)**
 
-### Firefox (Developer / Nightly / Temporary Load)
-1. Download [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) (or clone this repo).
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on...** and select `manifest.json` (or `true-date-extension.zip`).
+*(For local development: open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on...**, and select `manifest.json`.)*
 
 ### Chrome / Edge / Brave / Vivaldi
 1. Download and unzip [`true-date-extension.zip`](https://github.com/zdying/true-date-extension/raw/main/true-date-extension.zip) (or clone this repo).
